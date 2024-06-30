@@ -1,6 +1,6 @@
 #include <DHT.h>
 
-#define DHTPIN D5     // GPIO pin where the DHT sensor is connected
+#define DHTPIN D5    // GPIO pin where the DHT sensor is connected
 #define DHTTYPE DHT11 // the sensor we will be using is dht11
 DHT dht(DHTPIN, DHTTYPE);
 

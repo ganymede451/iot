@@ -1,3 +1,4 @@
+
 void setup() {
   pinMode(LED_BUILTIN, OUTPUT); 
   Serial.begin(9600);
@@ -8,10 +9,10 @@ void loop() {
     String command = Serial.readStringUntil('\n'); 
     // Read the incoming string until newline
     if (command == "ON") {
-      digitalWrite(LED_BUILTIN, HIGH); // Turn the LED on
+      digitalWrite(LED_BUILTIN, LOW); // Turn the LED on
       Serial.println("LED is ON");
     } else if (command == "OFF") {
-      digitalWrite(LED_BUILTIN, LOW); // Turn the LED off
+      digitalWrite(LED_BUILTIN, HIGH); // Turn the LED off
       Serial.println("LED is OFF");
     } else {
       Serial.println("Invalid command. Enter 'ON' or 'OFF'.");

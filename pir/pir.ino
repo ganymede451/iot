@@ -1,11 +1,8 @@
-// Include necessary libraries
-#include <Arduino.h>
 
-// Define the GPIO pin where PIR sensor output is connected
-const int pirSensor = 14;  // GPIO 14 on ESP32 (D14 on NodeMCU)
+const int pirSensor = D10; 
 
 void setup() {
-  Serial.begin(115200);
+  Serial.begin(9600);
   
   // Initialize PIR sensor pin as input
   pinMode(pirSensor, INPUT);
