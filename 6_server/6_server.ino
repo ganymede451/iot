@@ -1,7 +1,7 @@
 #include <ESP8266WiFi.h>
 
-const char* ssid = "gyanimayatmg_fbnpa";
-const char* password = "mayatamang123";
+const char* ssid = "YOUR SSIC";
+const char* password = "YOUR PASSWORD";
 WiFiServer server(80);
 
 String header;
@@ -68,10 +68,10 @@ void handleRequest(WiFiClient client) {
   
   if (header.indexOf("GET /2/on") >= 0) {
     output2State = "on";
-    digitalWrite(output2, HIGH);
+    digitalWrite(output2, LOW);
   } else if (header.indexOf("GET /2/off") >= 0) {
     output2State = "off";
-    digitalWrite(output2, LOW);
+    digitalWrite(output2, HIGH);
   }
 
 client.println("<!DOCTYPE html>");

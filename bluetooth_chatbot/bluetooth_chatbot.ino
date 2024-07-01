@@ -6,7 +6,7 @@
 SoftwareSerial bluetooth(BT_RX_PIN, BT_TX_PIN);
 
 void setup() {
-  Serial.begin(115200); // For serial monitor
+  Serial.begin(9600); // For serial monitor
   bluetooth.begin(9600); // HC-05 default baud rate
   
   Serial.println("Waiting for Bluetooth connection...");
@@ -22,6 +22,7 @@ void loop() {
   // If data is available from Serial Monitor, read it and send it to Bluetooth
   if (Serial.available()) {
     char serialData = Serial.read();
+    Serial.print(serialData);
     bluetooth.print(serialData);
   }
 }
