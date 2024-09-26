@@ -1,6 +1,6 @@
-#define BLYNK_TEMPLATE_ID "Your template ID"
-#define BLYNK_TEMPLATE_NAME "Your template Name"
-#define BLYNK_AUTH_TOKEN "Your auth token"
+#define BLYNK_TEMPLATE_ID "TMPL6HkdQQcNF"
+#define BLYNK_TEMPLATE_NAME "iot"
+#define BLYNK_AUTH_TOKEN "IoIIiOk2coeGlJtlR29akTA7oV3TuMng"
 
 
 
