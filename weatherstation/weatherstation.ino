@@ -4,7 +4,7 @@
 #include <Adafruit_BMP085_U.h> // BMP180 library
 
 // ThingSpeak API key and WiFi credentials
-String apiKey = "2MB4RRYK8Y59YN5T";
+String apiKey = "";
 const char *ssid = "gyanimayatmg_fbnpa";
 const char *pass = "mayatamang123";
 const char* server = "api.thingspeak.com";
