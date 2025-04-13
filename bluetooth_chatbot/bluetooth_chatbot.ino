@@ -1,9 +1,9 @@
 #include <SoftwareSerial.h>
 
-#define BT_RX_PIN D2  // Connect to TX of HC-05
-#define BT_TX_PIN D3  // Connect to RX of HC-05
+#define BT_RX_PIN 9 // Connect to TX of HC-05
+#define BT_TX_PIN 8  // Connect to RX of HC-05
 
-SoftwareSerial bluetooth(BT_RX_PIN, BT_TX_PIN);
+SoftwareSerial bluetooth(BT_RX_PIN,BT_TX_PIN);
 
 void setup() {
   Serial.begin(9600); // For serial monitor
@@ -24,5 +24,6 @@ void loop() {
     char serialData = Serial.read();
     Serial.print(serialData);
     bluetooth.print(serialData);
+
   }
 }
