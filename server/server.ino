@@ -1,8 +1,8 @@
 // Load Wi-Fi library
 #include <WiFi.h>
 
-const char* ssid = "meghnababy";
-const char* password = "khadkapariwar@17";
+const char* ssid = "ssid";
+const char* password = "passwrd";
 
 WiFiServer server(80);
 
